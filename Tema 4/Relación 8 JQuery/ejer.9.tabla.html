@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colores</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            div{width: 150px; height: auto; padding: 40px; text-align: center; background-color: slategray; margin: 10px;}    
+        </style>
+        <script>
+         $(document).ready(function(){
+           $("tr:even").css("background-color", "red");
+           $("tr:odd").css("background-color", "green")
+         });
+         
+        </script>
+
+        <h1>Ejercicio 9: Documento con Tabla fondo de colores</h1>
+        <table>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Ciudad</th>
+            </tr>
+              <td>Elena</td>
+              <td>Sánchez</td>
+              <td>Madrid</td>
+            </tr>
+          <tr>
+            <td>Franciso</td>
+            <td>Pérez</td>
+            <td>Jaén</d>
+          </tr>
+          <tr>
+            <td>Anabel</td>
+            <td>Murillo</td>
+            <td>Sevilla</td>
+          </tr>
+          <tr>
+            <td>Diana</td>
+            <td>Jiménez</td>
+            <td>Salamanca</td>
+          </tr>
+          <tr>
+            <td>Sandro</td>
+            <td>Martinez</td>
+            <td>Cádiz</td>
+          </tr>
+            
+        </table>
+    </body>
+</html>

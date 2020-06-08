@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/xmlcss.css"?>
+<pelicula estreno="">
+    <titulo>titulo</titulo>
+    <nacionalidad>nacionalidad</nacionalidad>
+    <duracion>
+        <horas>2 horas</horas>
+        <minutos>04 minutos</minutos>
+    </duracion>
+    <director>Francisco</director>
+    <actores>
+        <actor tipo="principal o reparto">
+            <nombre>Juan</nombre>
+            <apellidos>Velasco</apellidos>
+            <datos-actores></datos-actores>
+        </actor>
+    </actores>
+    <descripcion>Descripcion: Comedia</descripcion>
+</pelicula>

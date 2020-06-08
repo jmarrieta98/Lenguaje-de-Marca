@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <title>Examen</title>
+          <link rel="stylesheet" type="text/css" href="estilostareas.css">
+        
+     </style> 
+    </head>
+    <body>
+         <div>
+         <form action="mailto:reservas@achotel.com">
+          <table align="center">
+               <tr>
+                    <th class="th" colspan="2">Ejercicio 1</th>
+
+               </tr>
+               <tr>
+                    <td >Nombre</td>
+                    <td><input required name="nombre" type="text"></td>
+               </tr>
+               <tr>
+                    <td>Apellidos</td>
+                    <td><input required name="apellidos" type="text"></td>
+               </tr>
+               <tr>
+                    <td>Teléfono</td>
+                    <td><input type="tel" name="telefono" maxlength="9" pattern="[0-9]{9}"></td>
+               </tr>
+               <tr>
+                    <td>E-mail</td>
+                    <td><input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"></td>
+               </tr>
+               <tr>
+                    <td>DNI</td>
+                    <td><input type="text" name="dni" maxlength="9" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" /></td>
+               </tr>
+        
+                    <tr>
+                         <td><input type="submit" value="Enviar" /></td>
+                         <td><input type="reset" value="Resetear" /></td>
+                    </tr>
+                    
+          </table>
+         </form>
+     </div>

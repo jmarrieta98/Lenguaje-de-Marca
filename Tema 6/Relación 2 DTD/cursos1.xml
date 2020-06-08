@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escuela [
+    <!ELEMENT escuela (cursos+)>
+    <!ELEMENT cursos (nombreCurso, duracion, descripcion, opcionBeca, aula, precio, semana, profesores, temas+)>
+    <!ELEMENT nombreCurso (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    
+    <!ELEMENT opcionBeca (becas|noBeca)>
+    <!ELEMENT beca EMPTY>
+    <!ELEMENT noBeca EMPTY>
+
+    <!ELEMENT aula (numPlanta,numAula)>
+    <!ELEMENT numPlanta (#PCDATA)>
+    <!ELEMENT numAula (#PCDATA)>
+
+    <!ELEMENT precio (precioAntiguosAlum, precioNuevosAlum)>
+    <!ELEMENT precioAntiguosAlum (#PCDATA)>
+    <!ELEMENT precioNuevosAlum (#PCDATA)>
+
+    <!ELEMENT semana (inicio,fin)>
+    <!ELEMENT horario (manana|tarde)>
+    <!ELEMENT manana EMPTY>
+    <!ELEMENT tarde EMPTY>
+    <!ELEMENT inicio (dia, mes, ano )>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT ano (#PCDATA)>
+    <!ELEMENT fin (dia,mes,ano )>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT ano (#PCDATA)>
+
+    <!ELEMENT profesores (nombre,apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)> 
+
+    <!ELEMENT temas (titulo, resumenTema, palabrasClave, ejercicios?)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT resumenTema (#PCDATA)>
+    <!ELEMENT palabrasClave (#PCDATA)>
+    <!ELEMENT ejercicios (practicos,teoricos)>
+    <!ELEMENT practicos (numEjercPracticos, duracion)>
+    <!ELEMENT numEjercPracticos (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)>
+    <!ELEMENT teoricos (numPregTeoricas,duracion)>
+    <!ELEMENT numPregTeoricas (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)> 
+]>

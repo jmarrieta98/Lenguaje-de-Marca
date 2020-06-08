@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color de Fondo</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#boton").on("click",function(){
+            	    $("#parrafo").css("background-color", "#f8f32b");
+                });
+            });
+        </script>
+        <h1>Ejercicios 28: Cambiar Color de Fondo</h1>
+        
+        <p id="parrafo" style="background-color:#FF0040;">Esto es un párrafo de texto de color rojo.</p>
+        <p><input type="button" id="boton" value="Clicka para cambiar la propiedad"></p>
+    </body>
+</html>
+

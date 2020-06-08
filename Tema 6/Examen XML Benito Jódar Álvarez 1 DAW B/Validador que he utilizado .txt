@@ -1,0 +1,1 @@
+﻿Validador que he utilizado : https://www.liquid-technologies.com/online-xml-validator

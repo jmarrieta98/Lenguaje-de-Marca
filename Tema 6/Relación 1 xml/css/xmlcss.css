@@ -1,0 +1,18 @@
+
+  aula {
+    background-color: lightgreen;
+    border: black 2px solid;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+   pelicula {
+    background-color: white;
+    border-bottom: black 2px solid;
+    font-weight: bold;
+    padding-left: 5px;
+    text-align-last: center;
+  }
+  titulo, nacionalidad,duracion,horas, minutos,direcctor,actores,actor,nombre, apellidos, descripcion{
+    padding-left: 5px;
+  }

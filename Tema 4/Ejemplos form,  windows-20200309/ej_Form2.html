@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 8</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form>
+			Nombre:
+			<input type="text" id="nom" size="14"><br>
+			Edad:
+			<input type="number" id="edad" size="4" min="1" max="120" >
+	</form>
+		<p>Muestra Nombre y Edad debajo</p>
+
+		<button onclick="mostrar_datos()">Mostrar datos</button>
+
+		<p id="demo"></p>
+
+        <script type="text/javascript">
+	
+            debugger
+            function mostrar_datos(){
+                var nombre = document.getElementById('nom').value;
+                var edad = document.getElementById('edad').value;
+                document.getElementById('demo').innerHTML=nombre+ " "+ edad;
+            }
+    </script>
+
+</body>
+</html>

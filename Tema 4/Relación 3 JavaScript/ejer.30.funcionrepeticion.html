@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 30: Función Repetición</title>
+    </head>
+    <body>
+        <script>
+            var coincidencia;
+            
+            function myFunction() {
+                var str = prompt("Introduce una cadena:", "");
+                coincidencia = prompt("Introduce el caracter a buscar:", "");
+            
+                if (str != null) {
+                   alert("en "+ str +" el numero " + coincidencia + " se repite " + cuenta(str) +" veces."); 
+            
+                }
+            }
+            
+            function cuenta(str) {  
+            var regex = new RegExp("[^"+ coincidencia +"]","g");
+            str = str.replace(regex, "").length  
+            return str;
+            }
+            myFunction();
+        </script>
+    </body>
+</html>

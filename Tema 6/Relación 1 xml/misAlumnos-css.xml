@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/xmlcss.css"?>
+<aula>
+    <alumno dni="">
+         <nombre> Martin</nombre>
+         <apellidos> Perez</apellidos>
+         <sexo> hombre </sexo>
+         <fecha-nacimiento>
+            <dia>12</dia>
+            <mes>marzo </mes>
+            <año> 1994</año>
+        </fecha-nacimiento>
+        <direccion> Dirección: Calle Caronte Nº 34</direccion>
+        <telefono tipo="movil fijo"> Móvil: 56566543 </telefono>
+        <nota-media-ciclo> Nota: 8.7</nota-media-ciclo>
+    </alumno>
+    <alumno dni="">
+        <nombre> </nombre>
+        <apellidos> </apellidos>
+        <sexo> </sexo>
+        <fecha-nacimiento>
+           <dia> </dia>
+           <mes> </mes>
+           <año> </año>
+       </fecha-nacimiento>
+       <direccion></direccion>
+       <telefono tipo="movil fijo"> </telefono>
+       <nota-media-ciclo></nota-media-ciclo>
+   </alumno>
+   <alumno dni="">
+         <nombre> </nombre>
+         <apellidos> </apellidos>
+         <sexo> </sexo>
+         <fecha-nacimiento>
+            <dia> </dia>
+            <mes> </mes>
+            <año> </año>
+        </fecha-nacimiento>
+        <direccion></direccion>
+        <telefono tipo="movil fijo"> </telefono>
+        <nota-media-ciclo></nota-media-ciclo>
+    </alumno>
+    <alumno dni="">
+        <nombre> </nombre>
+        <apellidos> </apellidos>
+        <sexo> </sexo>
+        <fecha-nacimiento>
+           <dia> </dia>
+           <mes> </mes>
+           <año> </año>
+       </fecha-nacimiento>
+       <direccion></direccion>
+       <telefono tipo="movil fijo"> </telefono>
+       <nota-media-ciclo></nota-media-ciclo>
+   </alumno>
+   <alumno dni="">
+         <nombre> </nombre>
+         <apellidos> </apellidos>
+         <sexo> </sexo>
+         <fecha-nacimiento>
+            <dia> </dia>
+            <mes> </mes>
+            <año> </año>
+        </fecha-nacimiento>
+        <direccion></direccion>
+        <telefono tipo="movil fijo"> </telefono>
+        <nota-media-ciclo></nota-media-ciclo>
+    </alumno>
+    <alumno dni="">
+         <nombre> </nombre>
+         <apellidos> </apellidos>
+         <sexo> </sexo>
+         <fecha-nacimiento>
+            <dia> </dia>
+            <mes> </mes>
+            <año> </año>
+        </fecha-nacimiento>
+        <direccion></direccion>
+        <telefono tipo="movil fijo"> </telefono>
+        <nota-media-ciclo></nota-media-ciclo>
+    </alumno>
+</aula>

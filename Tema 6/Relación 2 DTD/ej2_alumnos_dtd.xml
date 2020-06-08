@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE aula[
+    <!ELEMENT aula (alumno+)>
+    <!ELEMENT alumno (nombre,apellidos,sexo,fecha_nto,direccion,telefono,nota_media)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>  
+    <!ELEMENT sexo (hombre| mujer)> 
+    <!ELEMENT hombre EMPTY>
+    <!ELEMENT mujer EMPTY>
+    <!ELEMENT fecha_nto (dia,mes,annyo)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT annyo (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT nota_media (#PCDATA)>
+    <!ATTLIST alumno dni ID #REQUIRED>
+    <!ATTLIST fecha_nto zodiaco (Aries|Piscis|Virgo|Leo|Capricornio|Sagitario) #IMPLIED>
+    <!ATTLIST telefono tipo (fijo|movil) "fijo"> 
+    
+]>
+<aula>
+    <alumno dni="V312546">
+        <nombre>Juan</nombre>
+        <apellidos>Pérez</apellidos>
+        <sexo><hombre /></sexo>
+        <fecha_nto zodiaco="Sagitario">
+            <dia>1</dia> 
+            <mes>12</mes>
+            <annyo>2000</annyo>
+        </fecha_nto>
+        <direccion> C/Sol 2</direccion>
+        <telefono tipo="fijo">956222222</telefono>
+        <nota_media>7</nota_media>
+    </alumno>
+    <alumno dni="B44466">
+        <nombre> Pepa</nombre>
+        <apellidos>Mel</apellidos>
+        <sexo><mujer/></sexo>
+        <fecha_nto zodiaco="Leo">
+            <dia>6</dia> 
+            <mes>7</mes>
+            <annyo>1995</annyo>
+        </fecha_nto>
+        <direccion> C/Luna 2</direccion>
+        <telefono tipo="movil">666622222</telefono>
+        <nota_media>9</nota_media>
+    </alumno>
+</aula>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <link rel="stylesheet" type="text/css" href="estilostareas copia.css">
+   <link rel="script" type="">
+   <meta charset="UTF-8">
+   <title>Calculadora</title>
+</head>
+   
+
+<body>
+   <h1>Calculadora</h1>
+<form onsubmit="return false">   
+   
+<fieldset align="center">
+Número 1 <input align="center" type="Number" id="a" size="5" min="0"><br>
+Número 2 <input align="center" type="Number" id="b" size="5" min="0"><br>
+Resultado <input align="center" type="text" id="r" readonly="readonly"/><br>
+</fieldset>
+
+<fieldset align="center">
+<button onclick="suma()">suma</button>
+<button onclick="resta()">resta</button>  
+<button onclick="multiplicacion()">multiplicacion</button>
+<button onclick="division()">division</button> 
+<button onclick="exponente()">exponente</button>
+<button onclick="raiz()">raíz</button>
+<button onclick="porcent()">porcentaje</button>
+<button onclick="borrar()">borrar</button> 
+<button onclick="mostrar_datos()">Mostrar datos en otra ventana</button>
+<input name="button" type="button" onclick="window.close();" value="Cerrar esta ventana"/>    
+
+</fieldset>  
+
+
+
+</form>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="script.js"></script>
+</body>
+</html>

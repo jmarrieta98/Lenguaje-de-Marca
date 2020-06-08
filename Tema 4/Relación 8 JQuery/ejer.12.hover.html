@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hover</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){    
+                $("p").hover(function(){
+                  alert("El ratón está encima del párrafo");
+                },
+                function(){
+                  alert("El ratón ya no está encima del párrafo");
+                });
+            });
+        </script>
+        <h1>Ejercicio 12: Párrafo con el método Hover</h1>
+
+        <p>Esto es un párrafo de prueba para el ejercicio 12.</p>
+    </body>
+</html>

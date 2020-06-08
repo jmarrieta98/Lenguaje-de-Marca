@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texto añadido</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+              $(document).ready(function(){
+                $("#btnlista").click(function(){
+                  $("#lista").append("<li>Manzana</li>")
+                })
+                
+                $("#btntexto").click(function(){
+                  $("p").append("<p>Esta frase es añadida</p>")
+                })
+                
+                $("#segundo").click(function(){
+                  $("ul li:nth-child(1)").append("<li>Pera</li>")
+                })
+              })
+        </script>
+        <h1>Ejercicio 18: Texto añadido y nuevo item al final</h1>
+        <ul id="lista">
+          <li>Plátano</li>
+          <li>Mandarina</li>
+          <li>Mango</li>
+        </ul>
+         <button id="segundo">Segunda posición</button>
+        <button id="btnlista">Añadir item</button>
+        <p>Texto de un párrafo</p>
+        <button id="btntexto">Añadir texto</button>     
+    </body>
+</html>

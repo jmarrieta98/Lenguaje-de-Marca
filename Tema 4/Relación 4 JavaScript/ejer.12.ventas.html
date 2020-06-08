@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 12: Array Ventas</title>
+    </head>
+    <body>
+        <script>
+            function Media(){
+              var suma=0;
+              for(var i=0; i<10; i++){ 
+                  var number = prompt('Introduzca un numeros, por favor:['+i+']=');        
+                  if(!isNaN(number) && number!=''){
+                      suma = suma + parseInt(number);                      
+                  }
+                  else{
+                      alert('Por favor introduzca un numero!!');
+                      i--;
+                  }                        
+              }
+              alert('La media es: '+ (suma/10));
+            }
+        </script>
+    <h2>Relación 4 JavaScript de Ejercicios: Array Ventas</h2>
+    </body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio html</title>
+        <meta charset="UTF-8">
+        <style>
+            table,th,td {border: 1px solid blueviolet;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: whitesmoke;">
+        <p> Esto es un p&aacute;rrafo</p>
+        <h2 id="Inicio">Principio de página</h2>
+         
+        <!--Atributo-->
+        <p title="Esto es un p&aacute;rrafo">Párrafo con atributo t&iacute;tulo</p>
+        <img src="imagenmar.jpg" alt="Imagen Mar" width="500" height="450">
+        <img src="download.jpg"  alt="Download"   width="500" height="350">
+        
+        <!--Comillado-->
+        <p title="Párrafo con 'comillas' ">comillas</p>
+        
+        
+        <!--Entidades. Caracteres reservados-->
+        <p>El signo menor &lt; es un carácter reservado</p>
+        <p>El signo mayor &gt; es un carácter reservado</p>
+        <p>El signo ampersand &amp; es un carácter reservado</p>
+        <p>El signo comillas dobles &quot; es un carácter reservado</p>
+        <p>El signo comillas simplers &apos;es un carácter reservado</p>
+
+        <!--Encabezados-->
+        <h1>Encabezado 1</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+ 
+        <!--Líneas-->
+        <hr>
+        
+        <!--Saltos de línea-->
+        <br>
+
+        <!--Párrafo sin formato-->
+        <p>Este Párrafo
+            contine
+            salto de </br>
+            línea
+        </p>
+        
+        <!--Párrafo preformateado-->
+        <pre> Este Párrafo
+            contiene
+            salto 
+            de línea
+        </pre>
+
+        <!--Estilos-->
+        <p style="color: green;  ">Párrafo con color</p><h1 style="font-family: sans-serif;">Encabezado con tipo de letra</h1>
+        <h2 style="font-size: medium;">Encabezado 2 con tamaño de letra</h2>
+        <p style="text-align: center;">Texto centrado</p>
+
+        <!--Formatear texto-->
+        <p>Este párrafo contiene <b>texto en negrita</b></p>
+        <p>Este párrafo contiene <strong>texto importante</strong></p>
+
+        <p>Este párrafo contiene <i>texto en cursiva</i></p>
+        <p>Este párrafo contiene <em>texto enfático</em></p>
+        <p>Este párrafo contiene <mark>marcado</mark></p>
+        <p>Este párrafo contiene <small>pequeño</small></p>
+        <p>Este párrafo contiene <del>texto elimidado</del></p>
+        <p>Este párrafo contiene <ins>texto añadido</ins></p>
+        <p>Este párrafo contiene <sub>un subindice</sub></p>
+        <p>Este párrafo contiene <sup>un superíndice</sup></p>
+
+        <!--Colores-->
+        <!--Color rgb(rojo,verde,azul)-->
+        <p style="color: rgb(80,100,9);">Color rgb</p>
+        <p style="color: rgb(0,0,0);">Color rgb negro</p>
+        <p style="color: rgb(255,255,255);">Color rgb blanco</p>
+        <p style="color: rgb(60,60,60);">Color gris</p>
+        <p style="color: rgb(120,120,120);">Color gris claro</p>
+        <p style="color: rgb(200,200,200);">Color gris muy claros</p>
+
+        <!--Color Hex-->
+        <p style="color: #E38BA2;">Color HEX</p>
+        <p style="color: #FF0000;">Color Rojo</p>
+        <p style="color: #000000;">Color Negro</p>
+        <p style="color: #ffffff;">Color Blanco</p>
+        <p style="color: #3c3c3c;">Color Gris</p>
+
+        <!--Color HSL (matiz, saturación, ligereza)-->
+        <p style="color: hsl(0,100%,50%);">Color HSL</p>
+        <p style="color: hsl(240,100%,50%);">Color azul</p>
+        <p style="color: hsl(147,50%,47%);">Color verde</p>
+
+        <!--Color RGBA-->
+        <p style="color: rgba(255,99,71,0.9);">Color rgba</p>
+        <p style="color: rgba(235,30,40,0.2);">Color rgba</p>
+
+        <!--Citas textuales-->
+        <p>Segun el W3C, el valor del atributo <em> cite </em>en las etiquetas
+        <strong>blockquote </strong>tiene el sigueinte significado:</p>
+        <blockquote cite=http://www.w3.org>"El valor de este atributo es 
+        una direccion URL que indica el documento original de la cita."</blockquote>
+
+        <p>Como dijo<cite> Mahatma Gandhi</cite>:<blockquote>"Vive como si fuera
+            a morir mañana y aprende como si fueras a vivir para siempre"
+            </blockquote></p>
+
+
+        <!--Acrónimos o siglas-->
+        <p> El lenguaje <abbr title="HyperText Mark Language"></abbr>HTML es estandarizado
+        por el <abbr title="World Wide Web Consortium">W3C</abbr></p>
+
+        <!--Enlaces-->
+            <!--Un enlace puede ser texto, imágen o cualquier elemento html-->
+            <a href="https://elpais.com/" target="_blank">Enlace a una página</a>
+            <a href="http://www.sensacine.com/" target="_self">Enlace a una página</a>
+            <a href="http://www.rtve.es/television/dias-cine/" target="_top">Enlace a una página</a>
+                        <!--self y top tinen la misma función-->
+
+            <a href="https://static3.elcorreo.com/www/multimedia/201908/29/media/cortadas/arrieta-nueva-buena-kzYD-U9029105792FG-624x385@El%20Correo.png"><img src="arrieta.png" alt="" style="width: 42px;height: 42px;"></a>
+    
+        <!--Marcadores-->
+        <a href="#Inicio">Saltar al principio de la página</a>
+
+        <!--Imagenes animadas-->
+        <img src=".gif" alt="" style="width:48px;height:48px;">
+    
+        <!--Imágenes flotantes-->
+        <p><img src="derecha.jpg" alt="derecha" style="float:right;">Imagen a la derecha</p>
+        <p><img src="izquierda.png" alt="izquierda" style="float:left;">Imagen a la izquierda</p>
+
+        <!--Imágen como vínculo-->
+        <a href="">
+            <img src="" alt="" style="width: 42px; height: 42px;">
+        </a>
+
+        <!--Mapa de imágenes-->
+        <img src="" alt="" style="width: 145px; height: 126px;">
+
+        <map name="planetmap">
+            <area shape="rect" coords="63,31" alt="" href="">
+            <area shape="circle" coords="" alt="" href="">
+            <area shape="poly" coords="" alt="" href="">
+        </map>
+
+
+        <!--Tablas-->
+        <table style="width:100%">
+            <tr> <!--Filas--> 
+                <th>Primer Nombre</th>
+                <th>Segundo Nombre</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>Reina</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>Román</td>
+                <td>43</td>
+            </tr>
+        </table>
+
+        <!--Celdas que abarcan muchas columnas-->
+        <table style="width: 60%">
+            <tr>
+                <th>Nombre</th>
+                <th colspan="2">Teléfono</th>
+            </tr>
+            <br>
+            
+            <tr>
+                <td>Bill Gates</td>
+                <td>55562365</td>
+                <td>55596526</td>
+            </tr>
+        </table>
+
+        <!--Listas HTML no ordenadas-->
+        <h3>Listas no ordenadas</h3>
+        <ul>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+
+        <!--Listas no ordenadas: elegime marcador de elemento de lista-->
+        <h2>Listas no ordeandas con marcadores</h2>
+        <ul style="list-style-type: disc;">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+            
+        <ul style="list-style-type: square;">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+
+        <ul style="list-style-type: none;">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ul>
+        
+        <!--Lista HTML ordenada-->
+        <ol>
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ol>
+
+        <ol type="1">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ol>
+
+        <ol type="A">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ol>
+
+        <ol type="a">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ol>
+
+        <ol type="I">
+            <li>Café</li>
+            <li>Té</li>
+            <li>Leche</li>
+        </ol>
+        <br>
+        <hr>
+        
+        <!--Listas de Descripcíon-->
+        <h3>Lista de Descripción</h3>
+        <dl>
+            <dt>Café</dt>
+            <dd>Bebida negra caliente</dd>
+            <dt>Leche</dt>
+            <dd>Bebida blanca fría</dd>
+        </dl>
+        <br>
+        
+        <!--Listas HTML animadas-->
+        <h4>Listas animadas</h4>
+        <ul>
+            <li>Café</li>
+            <li>Té</li>
+                <ul>
+                    <li>Té negro</li>
+                    <li>Té verde</li>
+                </ul>
+            
+            <li>Leche</li>
+        </ul>
+        <br>
+        <hr>
+        
+        <!--Bloque HTML y elementos de línea-->
+        <p> Un elemento de nivle de bloque siempre comienza en una nueva línea
+             y ocupa toda la anchura disponible</p>
+            <p>Ejemplos de elementos a nivel de bloque: div, h1 a h6, p,form</p>
+        <p>Elementos en línea no se inicia en una nueva línea y sólo ocupa tanto
+            ancho como sea necesario</p>
+        <p>Ejemplos de elementos en línea: span, a , img</p>
+        <br>
+        <div style="background-color: darkblue; color: darkcyan; padding: 20px;">
+            <h2>Londres</h2>
+            <p>Londres es la capital de Inglaterra. Es la ciudad más popular 
+                del Reino Unido.</p>
+        </div>
+        
+        <h1>El <span style="color: darkred">elemento </span> span se puede 
+            utilizar para <span style="color: deeppink;">estilos </span>diferentes</h1>
+        
+        <br>
+        <hr>
+        
+        <!--Formularios-->
+        <h2><strong>Formularios</strong></h2>
+        <form>
+            Nombre:<br>
+            <input type="text" name="nombre"><br>
+            Apellido:<br>
+            <input type="text" name="apellido"><br>
+        </form>
+        <br>
+        <form>
+            <input type="radio" name="género">Masculino<br>
+            <input type="radio" name="género" checked>Femenino<br> <!--checked para preselecionar-->
+            <input type="radio" name="género">Otro<br>
+        </form>
+        
+        <form action="/action_page.php">
+            Nombre:<br>
+            <input type="text" name="nombre" value="Benito"><br>
+            Apellido:<br>
+            <input type="text" name="apellido" value="Jódar"><br>
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <form action="/action_page.php" method="GET">    <!--con GET se pone nombre y apellido en el buscador-->
+            Nombre:<br>
+            <input type="text" name="nombre" value="Benito"><br>
+            Apellido:<br>
+            <input type="text" name="apellido" value="Jódar"><br>
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <form action="/action_page.php" method="POST">
+            Nombre:<br>
+            <input type="text" name="nombre" value="Benito"><br>
+            Apellido:<br>
+            <input type="text" name="apellido" value="Jódar"><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <form action="/action_page.php">
+            <fieldset>
+            Nombre:<br>
+            <input type="text" name="nombre" value="Benito"><br>
+            Apellido:<br>
+            <input type="text" name="apellido" value="Jódar"><br>
+            <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+
+        <!--Elementos del Formulario HTML-->
+       <form>
+          <p>El elemento "select" define una lista desplegable. De forma predeterminada,
+              se selecciona el primer elemento de la lista deplegable.</p>
+          <select name= "coches">
+              <option valaue="volvo" selected>Volvo</option>
+              <option valaue="kia">Kia</option>
+              <option valaue="audi">Audi</option>
+              <option valaue="hyundai">Hyundai</option>
+          </select>
+          <br>
+          <p>El elemento "textarea" deine un campo de entrada de varias líneas.</p>
+          <textarea name="mensaje" cols="30" rows="10">
+          El atributo rows especifica el número visible de líneas en el área de texto.
+          El atributo cols específica el ancho visible de un área de texto
+          El atributo Id es para identificarlo. 
+          </textarea>
+          <br>
+  
+          <p>El elemento "Button" define un botón que se puede pulsar.</p>
+          <button type="button" onclick="alert('Hola mundo')">Click
+          </button>
+  
+          <hr>
+          <p>El elemento datalist especifica una lista de opciones predefinidas
+              para un elemento, input, pero puedo introducir
+              manualmente valores que no aparecen en el listado</p>
+          <from action="/action_page.php">
+              <input list="browsers">
+              <datalist id= "browsers">
+                  <option value="Internet Explorer"></option>
+                  <option value="Firefox"></option>
+                  <option value="Chrome"></option>
+                  <option value="Opera"></option>
+                  <option value="Safari"></option>
+              </datalist>
+          </from>
+          
+          <fieldset>
+              <legend>Usuario</legend>
+              Nombre:<br>
+              <input type="text" name="nombre" ><br>
+              Contraseña:<br>
+              <input type="password" name="pass"><br>   
+          </fieldset>
+  
+          <fieldset>
+              <input type="radio" name="género" checked="Masculino">Masculino<br>
+              <input type="radio" name="género" checked="Femenino">Femenino<br> <!--checked para preselecionar-->
+              <input type="radio" name="género" checked="Otro">Otro<br>
+              <br>
+              <input type="checkbox" name="vehiculo1" value="Bicicleta">
+              Tengo Bicicleta<br>
+              <input type="checkbox" name="vehiculo2" value="Coche">
+              Tengo Coche<br>
+              <input type="checkbox" name="vehiculo3" value="Patinete">
+              Tengo Patinete
+          </fieldsel>
+          <hr>
+  
+          <fieldset>
+              <legend>Tipos de entrada html5</legend>
+              Selecciona tu color favorito:
+              <input type="color" name="favcolor">
+              <br>
+              Fecha de Nacimiento:
+              <input type="date" name="cumple" max="2006-12-31">
+              Fecha de Nacimiento (fecha y hora):
+              <input type="datetime-local" name="bdtyme">
+              <br>
+              Cantidad (entre 1 y 5):
+              <input type="number" name="cantidad" min="1" max="5">
+              <br>
+              Rango:
+              <input type="range" name="puntos" min="0" max="10">
+              Correo Electrónico:
+              <input type="email" name="email">
+              <br>
+              Teléfono:
+              <input type="tel" name="teléfono">
+              <br>
+              Selecciona hora:
+              <input type="time" name="tiempo">
+              Selecciona semana:
+              <input type="week" name="semana">
+          </fieldset>
+          
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Restablecer">
+       </form>
+  
+  
+  
+   
+    </body>
+
+</html>

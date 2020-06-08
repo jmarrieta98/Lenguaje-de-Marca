@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 1 Potencia de un Número</title>
+	<meta charset="utf-8">
+</head>
+<body>	
+
+    <form onsubmit="return false">   
+        <fieldset>
+            <legend>Potencia</legend>
+            Base:
+            <input type="number" id="base" size="5" min="0">
+            Exponente:
+            <input type="number" id="expo" size="5" min="0">
+            <br>
+            Resultado:
+            <input type="text" id="resultado" size="7" disabled >
+        <br>    
+		<button onclick="potencia()">Calcular</button>
+        <button onclick="borrar()">Borrar</button>    
+        </fieldset>
+    </form>
+       
+        
+		
+		<p id="demo"></p>
+
+        <script type="text/javascript">
+	
+            debugger
+            function potencia(){
+                var n1 = document.getElementById('base').value;
+                var n2 = document.getElementById('expo').value;
+                var resultado= n1
+                if (n2==0){
+                    resultado=1
+                }
+                else{
+                for(i=1;i<n2;i++){
+                    resultado *=n1
+                }
+                }
+                document.getElementById('resultado').value = parseInt(resultado);
+            }
+            function borrar(){
+                document.getElementById('base').value= "";
+                document.getElementById('expo').value = "";
+                document.getElementById('resultado').value = "";
+            }
+            
+            
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Ejercicio 9: Rectángulo</title>
+    </head>
+	<body>
+		<script type="text/JavaScript">
+        
+            function rectangulo(base,altura){
+                debugger
+                for(var y=0; y<=altura-1;y++){
+                    for(var x=0; x<base;x++){
+                        if ((y==0)|| (y==altura-1))
+                            document.write("#");
+                        else
+                            if((x==0)||(x==base-1))
+                                document.write("#");
+                            else
+                                document.write("&nbsp;&nbsp;")
+                    }
+                    document.write("<br>"); 
+                }
+            }
+            var base = prompt("Introduce base rectángulo: ");
+            var altura = prompt("Introduce la altura del rectángulo : ")
+               
+            rectangulo(base,altura);
+        </script>
+		 <h2>Relación 3 JavaScript de Ejercicios: Rectángulo</h2>
+	</body>
+</html>

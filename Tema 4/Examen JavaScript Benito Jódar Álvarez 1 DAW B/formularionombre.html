@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2: Formulario</title>
+        <meta charset="utf-8">
+        
+        <script language="javascript">
+            function validar(){
+                var todo_correcto = true;
+                
+                if(document.getElementById('nombre').value.length < 2 ){
+                    todo_correcto = false;
+                }
+                
+                if(document.getElementById('direccion').value.length < 10 ){
+                    todo_correcto = false;
+                }
+                
+                var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+                var letraCorrecta = letras[numDNI % 23];
+                
+                if(letraDNI!= letraCorrecta){
+                  alert("Has introducido una letra incorrecta\nTu letra debería ser: " + letraCorrecta);
+                } else {
+                  alert("Enhorabuena hemos podido validar tu DNI");
+                
+                }
+                
+                var expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
+                var email = document.form1.email.value;
+                if (!expresion.test(email)){
+                	todo_correcto = false;
+                }
+                
+                
+                if(!todo_correcto){
+                    alert('Algunos campos no están correctos, vuelva a revisarlos');
+                }
+                
+                return todo_correcto;
+                }
+                validar();
+        </script>
+    </head>
+<body>
+    <fieldset>
+            <legend>Formulario de Inscripción</legend>
+            <label for="registro_nombre">Nombre:</label>
+            <input type="text" name="nombre" id="registro_nombre"><br><br>
+            
+            <label for="registro_apellidos">DNI:</label>
+            <input type="text" name="dni" id="registro_dni"><br><br>
+            
+            <label for="registro_email">Email:</label>
+            <input type="text" name="email" id="registro_email"><br><br>
+    </fieldset>
+    <input type="submit" value="Inscribir">   
+</body>
+</html>

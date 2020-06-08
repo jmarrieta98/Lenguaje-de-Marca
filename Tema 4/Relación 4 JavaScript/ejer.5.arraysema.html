@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 5: Array en la Semana</title>
+    </head>
+    <body>
+        <script>
+            function dias(a,b){
+                if (a>b){
+                    return -1;
+                }
+                else{
+                    return 1;
+                }
+            }
+            var fecha = new Date(); 
+            var semana = [" lunes " , " martes " , " miércoles " ,  " jueves " , " viernes " , " sábado " , " domingo "]; 
+            alfabeticamente = semana.sort();
+            document.write("Los días de la semana ordenados alfabéticamente: "+alfabeticamente+"<br>");
+            
+            inverso = semana.sort(dias)
+            document.write("Los días de la semana en orden inverso: "+inverso+"<br>");
+            document.write(semana[fecha.getDay()]); 
+        </script>
+    <h2>Relación 4 JavaScript de Ejercicios: Array en la Semana</h2>
+    </body>
+</html>
+
+
+            
+            
+            
+            
+            
+            
+            
+           

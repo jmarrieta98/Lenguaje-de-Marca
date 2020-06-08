@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+    <head>
+         <title>Ejercicio 5: Evaluaciones</title>
+         <script>
+            
+            var nota1 = parseInt(prompt("Introduzca su nota del primer trimestre: "));
+            var nota2 = parseInt(prompt("Introduzca su nota del segundo trimestre: "));
+            var nota3 = parseInt(prompt("Introduzca su nota del tercer trimestre: "));
+            var mensaje="Usted tiene que recuperar"
+            if (0<=nota1 && nota1<5){
+                document.write(mensaje + " el primer trimestre.")
+            }
+            if (0<=nota2 && nota2<5){
+                document.write(mensaje + " el segundo trimestre.")
+            }
+            if (0<=nota3 && nota3<5){
+                document.write(mensaje + " el tercer trimestre.")
+            }
+            if (nota1>=5 && nota2>=5 && nota3>=5){
+                document.write("La nota final es: "+ ((nota1 + nota2 +nota3)/3))
+            }
+         </script>
+    </head>           
+<body>
+    <h2>Relación 2 de Ejercicios: Evaluaciones de una asignatura</h2>
+</body>
+</html>

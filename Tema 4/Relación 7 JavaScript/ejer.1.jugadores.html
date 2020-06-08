@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>Ejercicio 1: Jugadores</title>
+   <meta charset="UTF-8">
+   <script type="text/javascript">
+       function valida(f) {
+         var ok = true;
+         var msg = "Debe escribir algo en los campos:\n";
+         if(f.elements[0].value == "")
+         {
+           msg += "- Jugador 1\n";
+           ok = false;
+         }
+       
+         if(f.elements["jugador2"].value == "")
+         {
+           msg += "- Jugador 2\n";
+           ok = false;
+         }
+       
+         if(f.jugador3.value == "")
+         {
+           msg += "- Jugador 3\n";
+           ok = false;
+         }
+       
+         if(ok == false)
+           alert(msg);
+         return ok;
+       }
+       </script>
+   </head>
+   <body>
+      <form id="miForm" action="" method="get" onsubmit="return valida(this)">
+      <p>
+      Jugador 1: <input type="text" id="jugador1" />
+      <br />
+      Jugador 2: <input type="text" id="jugador2" />
+      <br />
+      Jugador 3: <input type="text" id="jugador3" />
+      <br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar" />
+      </p>
+      </form>
+   </body>
+   <h2>Relación de Ejercicios 7: Jugadores Formulario</h2>
+</html>

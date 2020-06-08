@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 20: Multiplicar</title>
+</head>
+<body>
+	<input type="text" id="numero" placeholder="Escribe una tabla">
+	<button id="iniciar">Iniciar tabla de Multiplicar del 5</button>
+	<script>
+		document.getElementById("iniciar").onclick = function(){
+			//captura el  numero ingresado
+			var entradaNumero = document.getElementById("numero").value;
+			//inicia la tabla que queremos hacer
+			for (var i=0; i<=10; i++){
+			var resultado = entradaNumero * i;
+			alert(entradaNumero+" * "+i+" = "+resultado);
+			}
+			alert("Fin del bucle");
+		}
+    </script>
+    <p>Relación 2 de Ejercicios: Tabla del 5</p>
+</body>
+</html>

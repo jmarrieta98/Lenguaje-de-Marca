@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejercicio 2 : Formulario Edad</title>
+  
+</head>
+
+<body>
+  <script>
+    function validar(formulario) {
+
+      if (formulario.nombre.value.length < 4) {
+        alert("Escriba por lo menos 4 caracteres en el campo \"nombre\".");
+        formulario.nombre.focus();
+        return (false);
+      }
+
+      var checkOK = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnñopqrstuvwxyzáéíóú ";
+      var checkStr = formulario.nombre.value;
+      var allValid = true;
+      for (i = 0; i < checkStr.length; i++) {
+        ch = checkStr.charAt(i);
+        for (j = 0; j < checkOK.length; j++)
+          if (ch == checkOK.charAt(j))
+            break;
+        if (j == checkOK.length) {
+          allValid = false;
+          break;
+        }
+      }
+      if (!allValid) {
+        alert("Escriba sólo letra caracteres en el campo \"nombre\".");
+        formulario.nombre.focus();
+        return (false);
+      }
+
+      if (formulario.edad.value.length != 2) {
+        alert("Escriba un valor mayor o igual que \"1\" y menor o igual que \"100\" en el campo \"Edad\".");
+        formulario.nombre.focus();
+        return (false);
+      }
+
+      var checkOK = "0123456789-";
+      var checkStr = formulario.edad.value;
+      var allValid = true;
+      var decPoints = 0;
+      var allNum = "";
+      for (i = 0; i < checkStr.length; i++) {
+        ch = checkStr.charAt(i);
+        for (j = 0; j < checkOK.length; j++)
+          if (ch == checkOK.charAt(j))
+            break;
+        if (j == checkOK.length) {
+          allValid = false;
+          break;
+        }
+        allNum += ch;
+      }
+      if (!allValid) {
+        alert("Escriba sólo dígito caracteres en el campo \"Edad\".");
+        formulario.edad.focus();
+        return (false);
+      }
+
+      if (document.getElementById('calle').value.length < 15) {
+        todo_correcto = false;
+      }
+      var numForm = document.forms["formulario"]["numero"].value;
+      if (isNaN(numForm) || numForm == null || numForm == "" || numForm.length == 0 || /^\s+$/.test(numForm)) {
+        alert("El campo edad no puede estar vacio y solo puede contener numeros");
+        return false;
+      }
+
+      var chkVal = allNum;
+      var prsVal = parseInt(allNum);
+      if (chkVal != "" && !(prsVal >= "1" && prsVal <= "100")) {
+        alert("Escriba un valor mayor o igual que \"1\" y menor o igual que \"100\" en el campo \"Edad\".");
+        formulario.edad.focus();
+        return (false);
+      }
+      if ((formulario.correo.value.indexOf('@', 0) == -1) || (formulario.correo.value.length < 5)) {
+        alert("Escriba una dirección de correo válida en el campo \"Dirección de correo\".");
+        formulario.correo.focus();
+        return (false);
+      }
+      return (true);
+    }
+  </script>
+
+  <h2>Relación 7 de Ejercicios: Edad Usuario</h2>
+  <fieldset>
+    <legend>Cliente</legend>
+    <p>Nombre: <input type="text" name="nombre" size="30"></p>
+    <p>Apellidos: <input type="text" name="apellidos" size="30"></p>
+    <p>Fecha Nacimiento: <input type="number" name="edad" size="30"></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Domicilio</legend>
+    <p>
+      <p>Calle: <input type="text" name="calle" size="30"></p>
+      <p>Número: <input type="text" name="numero" size="0"></p>
+      <p>C.P. <input type="text" name="codigo" size="30"></p>
+    </p>
+  </fieldset>
+  <input type="submit" value="Enviar" />
+  <input type="reset" value="Borrar" />
+</body>
+
+</html>

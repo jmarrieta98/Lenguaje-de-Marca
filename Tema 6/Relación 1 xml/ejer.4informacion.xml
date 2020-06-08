@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia-mundial>
+  <pais>
+    <pais>España</pais>
+    <continente>Europa</continente>
+    <capital>Madrid</capital>
+  </pais>
+</geografia-mundial>
+
+
+<!--las etiquetas no pueden contener espacios, por lo tanto, hay que cambiar las mediante guiones-->
+<!--la etiqueta de cierre no podrá contener atributos, por lo tanto, hay poner primero el valor en el interior de dicha etiqueta-->

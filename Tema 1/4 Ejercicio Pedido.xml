@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEDIDO>
+    <Destinatario>Jose Antonio Lojo</Destinatario>
+    <Articulo>bicicleta A2020</Articulo>
+    <Direccion>calle Barco 4, tercer piso, letra A</Direccion>
+    <Fecha>20-9-2019</Fecha>
+</PEDIDO>
+   

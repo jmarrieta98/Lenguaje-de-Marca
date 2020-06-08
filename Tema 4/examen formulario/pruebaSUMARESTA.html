@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+</head>
+	
+
+<body>
+
+Numero 1 <input id="a" type="Number" size="5" min="0"/><br>
+Numero 2 <input id="b" type="Number" size="5" min="0"/><br>
+Resultado: <input id="r" type="Number" size="7" disabled/>
+
+<input type="button" name="btn_suma" id="btn_suma" value="Suma" size="30" min="0" onClick="Suma()" />
+<input type="button" name="btn_resta" id="btn_resta" value="Resta" size="30" min="0" onClick="Resta()"/>
+<input type="button" name="btn_divi" id="btn_divi" value="Division" size="30" min="0" onClick="Division()" />
+<input type="button" name="btn_multi" id="btn_multi" value="Multiplicacion" size="30" min="0" onClick="Multiplicacion()"/>
+
+
+<script>
+	
+function suma() {
+	var numero1 = document.getElementsById('a').value;
+	var numero2 = document.getElementsById('b').value;
+	var resultado = parseInt(numero1) + parseInt(numero2);
+	document.getElementsById('r').value = resultado;
+}
+
+function resta() {
+	var numero1 = document.getElementsById('a').value;
+	var numero2 = document.getElementsById('b').value;
+	var resultado = parseInt(numero1) - parseInt(numero2);
+	document.getElementsById('r').value = resultado;
+}
+
+function multiplicacion() {
+	var numero1 = document.getElementsById('a').value;
+	var numero2 = document.getElementsById('b').value;
+	var resultado = parseInt(numero1) * parseInt(numero2);
+	document.getElementsById('r').value = resultado;
+}
+
+function division() {
+	var numero1 = document.getElementsById('a').value;
+	var numero2 = document.getElementsById('b').value;
+	var resultado = parseInt(numero1) / parseInt(numero2);
+	document.getElementsById('r').value = resultado;
+}
+
+</script>
+</body>
+</html>

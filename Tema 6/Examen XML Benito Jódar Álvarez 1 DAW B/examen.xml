@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE pedidos [
+
+<!ELEMENT pedidos (pedido+)>
+<!ELEMENT pedido (proveedor+)>
+<!ELEMENT proveedor (nombre, direccion, telefono, producto+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (calle, num, cp, localidad)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT num (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT producto (nombrep, Nunidades, capacidad, precio)>
+<!ELEMENT nombrep (#PCDATA)>
+<!ELEMENT Nunidades (#PCDATA)>
+<!ELEMENT capacidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+
+<!ATTLIST proveedor cif ID #REQUIRED>
+<!ATTLIST telefono tipo (fijo|movil) "fijo">
+<!ATTLIST producto cd (RAM|MICRO|HD|SSD) #REQUIRED>
+]>
+
+<pedidos>
+    <pedido>
+        <proveedor cif="A12345678">
+            <nombre>Jose Miguel Perez</nombre>
+            <direccion>
+                <calle>Calle Pinillos</calle>
+                <num>Numero 45</num>
+                <cp>10101</cp>
+                <localidad>Sevilla</localidad>
+            </direccion>
+            <telefono tipo="fijo">956622222</telefono>
+            <producto cd="RAM">
+                <nombrep>RAM</nombrep>
+                <Nunidades>8</Nunidades>
+                <capacidad>10 Gigas</capacidad>
+                <precio>30 Euros</precio>
+            </producto>
+        </proveedor>
+    </pedido>
+</pedidos>

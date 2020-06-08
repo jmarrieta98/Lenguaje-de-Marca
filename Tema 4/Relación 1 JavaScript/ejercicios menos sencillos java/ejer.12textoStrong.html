@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejemplo de write</title>
+
+  <script>
+    function nuevoContenido() {
+      alert("Acepta para que aparezca el texto");
+      document.open();
+      document.write("<strong>Esto es un texto de prueba para el ejercicio que apareza en negrita.<strong>");
+      document.close();
+    }
+  </script>
+</head>
+
+<body onload="nuevoContenido();">
+  <p>Esto es la prueba de texto</p>
+</body>
+
+</html>

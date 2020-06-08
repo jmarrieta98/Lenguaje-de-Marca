@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hola Mundo</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#btn1").click(function(){
+                $("#primero").text("Hola Mundo")
+              })
+              $("#btn2").click(function(){
+                $("#segundo").html("<b>Hola mundo</b>")
+              })
+              $("#btn3").click(function(){
+                $("#tercero").val("Hola Mundo")
+              });
+              
+            });
+         
+        </script>
+
+        <h1>Ejercicio 15: Documento Hola mundo</h1>
+        <p id="primero"></p>
+        <button id="btn1">Hola Mundo</button>
+        <p id="segundo"></p>
+        <button id="btn2">Hola Mundo en negrita</button>
+        <br>
+        <br>
+        <input id="tercero"><br>
+        <button id="btn3">Valor input</button>
+      
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 15: Potencia</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var base = parseInt(prompt("Introduce la base: "));
+        var exponente = parseInt(prompt("Introduce el exponente:"));
+        var result = potencia(base,exponente);
+        alert("Resultado: " + result);
+
+        function potencia(base, exponente){
+            var resultado = 1;
+            for (var cont=1; cont<=exponente;cont++){
+                resultado = resultado*base;
+            }
+            return resultado;
+        }
+        </script>
+        <h2>Relación 3 JavaScript de Ejercicios: Función Potencia</h2>
+    </body>
+</html>

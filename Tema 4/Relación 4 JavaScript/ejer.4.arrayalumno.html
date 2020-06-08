@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 4: Array Notas</title>
+    </head>
+    <body>
+        <script>
+             //Calcular media de cada alumno
+        function calcularMedia(alumnnos){
+            //Media de cada alumno
+            mediaAlumno = 0;
+            //Donde se almacenan las notas medias de los alumnos
+            notasAlumnos = [];
+            for (var i = 0; i < alumnnos.length; i++) {
+                for (var j = 1; j < alumnos[i].length; j++) {
+                    mediaAlumno += alumnnos[i][j];
+                }
+                result = mediaAlumno / (alumnnos.length - 1);
+                notasAlumnos.push(result);
+                mediaAlumno=0;
+            }
+
+            return notasAlumnos;
+        }
+
+        //Imprimir notas
+        function imprimirNotas(notas){
+            for (var i = 0; i < notas.length; i++) {
+                document.write(notas[i]+"<br>");
+            }
+        }
+
+
+        alumnos = ['juan',8,5,7];
+
+        notas = calcularMedia(alumnos)
+
+        imprimirNotas(notas);
+        </script>
+        <h2>Relación 4 JavaScript de Ejercicios: Array Alumnos</h2>
+    </body>
+</html>

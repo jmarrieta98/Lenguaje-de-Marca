@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="estilostareas.css"/>
+    </head>
+<body>
+    <form action="mailto:reservas@mihotel.com">
+    
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1>Formulario</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Nombre</p>
+                </td>
+                <td>
+                    <input type="text" name="Nombre" required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Apellidos</p>
+                </td>
+                <td>
+                    <input type="text" name="Apellidos" required>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <p>Teléfono</p>
+                </td>
+                <td>
+                    <input type="tel" name="Teléfono " pattern="[0-9]{9}"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Email</p>
+                </td>
+                <td>
+                    <input type="email" name="email" pattern="[a-zA-Z0-9]+([.][a-zA-Z0-9]+)@[a-zA-Z0-9]+([.][a-zA-Z0-9]+)[.][a-zA-Z]{1,5}">     
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>DNI</p>
+                </td>
+                <td>
+                    <input type="email" name="email" pattern="[a-zA-Z0-9]+([.][a-zA-Z0-9]+)@[a-zA-Z0-9]+([.][a-zA-Z0-9]+)[.][a-zA-Z]{1,5}"> 
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <p>Tipo Habitación</p>
+                    <input type="radio" name="tipo hab" value="habitación simple" checked />Habitación Simple<br/>
+                    <input type="radio" name="tipo hab" value="habitación doble"/>Habitación Doble<br/>
+                    <input type="radio" name="tipo hab" value="habitación Matrimonio"/>Habitación Matrimonio<br/>
+                </td>
+                <td>
+                    <p>Complementos </p>
+                    <input type="checkbox" name="comp[]" />Desayuno<br/>
+                    <input type="checkbox" name="comp[]" />Comida<br/>
+                    <input type="checkbox" name="comp[]" />Cena<br/>
+                    <input type="checkbox" name="comp[]" />Cama Supletoria<br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                     <input type="submit" value="Enviar"/>
+                </td>
+                <td>
+                    <input type="reset" value="Resetear"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

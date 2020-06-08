@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elementos Html</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            .rojo { color: red; }
+            .grande26 {font-size: 26px;}
+        </style>
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            	$("#boton01").click(function(){
+            		$("#parrafo").addClass("rojo");
+            	});
+            	$("#boton02").click(function(){
+            		$("#parrafo").addClass("rojo grande26");
+            	});
+            	$("#boton03").click(function(){
+            		$("#parrafo").removeClass("rojo");
+            	});
+            	$("#boton04").click(function(){
+            		$("#parrafo").removeClass("rojo grande26");
+            	});
+            });
+        </script>
+        <h1>Ejercicios 25: Añadir y borrar clases CSS</h1>
+        
+        <p id="parrafo">
+            Cuando se haga click en los botones se realizarán asignaciones o eliminaciones de estilos en este párrafo.
+            </p>
+             
+            <input type="button" name="boton01" id="boton01" value="Asignar color rojo">
+            <input type="button" name="boton02" id="boton02" value="Asignar texto rojo y tamaño 26px">
+            <input type="button" name="boton03" id="boton03" value="Eliminar estilo color rojo">
+            <input type="button" name="boton04" id="boton04" value="Eliminar estilo color rojo y el tamaño 26px"><br><br>
+
+          
+    </body>
+</html>

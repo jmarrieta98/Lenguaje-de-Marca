@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabla</title>
+        <meta charset="UTF-8">
+        <style>
+            tr.highlighted td {
+                   background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            var jQueryTabla = $("<table></table>");
+            jQueryTabla.attr({
+            id:"idtabla"});
+            
+            function addRow(){
+              var nuevoTr = "<tr bgcolor='FFFDC1'><th>Columna 1</th><th>Column 2</th><th>Columna 3</th></tr>";
+              jQueryTabla.append(  nuevoTr );
+            }
+            $("#contenedor").append(jQueryTabla);
+            $("#addRow").click(function(){
+            	addRow();
+            });
+         
+        </script>
+        <h1>Ejercicios 33: Tabla 8 filas</h1>
+        <div id="contenedor">
+        </div>
+        <button id="addRow">
+          Agregar fila
+        </button>
+            
+        
+    </body>
+</html>

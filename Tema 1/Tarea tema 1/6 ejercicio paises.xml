@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+   <pais>
+      <nombre>España</nombre>
+      <capital>Madrid</capital>
+      <polbacion>46.072.000 habitantes</polbacion>
+      <superficie>505.990 Km2</superficie>
+   </pais>
+   <pais>
+      <nombre>Belgica</nombre>
+      <capital>Bruselas</capital>
+      <polbacion>11.467.923 habitantes</polbacion>
+      <superficie>30.530 Km2 </superficie>
+   </pais>
+   <pais>
+      <nombre>Alemania</nombre>
+      <capital>Berlin</capital>
+      <polbacion>83.019.214 habitantes </polbacion>
+      <superficie>357.580 Km2 </superficie>
+   </pais>
+   <pais>
+      <nombre>Inglaterra</nombre>
+      <capital>Londres</capital>
+      <polbacion>66.647.112 habitantes </polbacion>
+      <superficie>243.610 Km2</superficie>
+   </pais>
+</paises>

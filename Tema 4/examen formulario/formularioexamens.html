@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validación de un formulario con JavaScript</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <script type="text/javascript">
+        function valida(f) {
+          var ok = true;
+          var msg = "Debes escribir contenido en los campos:\n";
+          if(f.elements[0].value == "")
+          {
+            msg += "- Marca 1\n";
+            ok = false;
+          }
+        
+          if(f.elements["marca2"].value == "")
+          {
+            msg += "- Marca 2\n";
+            ok = false;
+          }
+        
+          if(f.marca3.value == "")
+          {
+            msg += "- Marca 3\n";
+            ok = false;
+          }
+        
+          if(ok == false)
+            alert(msg);
+          return ok;
+        }
+        </script>
+    </head>
+    <body>
+        Introduce tus marcas de coches favoritas<br>
+        <form id="miFormulario" action="" method="get" onsubmit="return valida(this)">
+        <p>
+        Marca 1: <input type="text" id="marca1" />
+        <br />
+        Marca 2: <input type="text" id="marca2" />
+        <br />
+        Marca 3: <input type="text" id="marca3" />
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+        </p>
+        </form>
+    </body>
+            
+
+</html>

@@ -1,0 +1,30 @@
+body{background: #070707; color: black; font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em; margin:0;text-align: center;}
+footer, header, section{background: darksalmon; border-radius: 0.5em; padding: white;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
+    color: black; margin: 1em auto; padding: 1em; width:90%;
+}
+article{margin: 0.5em; border-radius: 0.5em;}
+header{background: url(fondo.jpg);}
+header h1{font-family: Arial, Helvetica, sans-serif; font-size: 3em;
+    text-shadow: rgba(0, 0, 0, 0.8) 2px 2px 10px; 
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    transition: all 1s ease-in-out;}
+header h1:hover{color: goldenrod; font-size: 3.2em;
+    text-shadow: #DDD 0px 2px 1px,
+    #DDD 2px 4px 2px,
+    #DDD 4px 6px 3px,
+    #DDD 6px 8px 4px;
+    -webkit-transform: rotate(7deg) rotate(30deg)  skewX(-5deg);
+    -o-transform:rotate(7deg) rotate(30deg)  skewX(-5deg);
+    -moz-transform: rotate(7deg) rotate(30deg)  skewX(-5deg);
+    transform: rotate(7deg)  rotateX(30deg) skewX(-5deg);
+}
+div{
+    text-align: center;
+}
+#navidad{background: rgba(255, 255, 255, 0.8); border-radius: 0.3em;
+    color:black; 
+    padding:1em; text-shadow:rgba(0, 0, 0, 0.4) 2px 2px 10px;}

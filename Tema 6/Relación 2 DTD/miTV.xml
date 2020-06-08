@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TVSCHEDULE
+[
+<!ELEMENT TVSCHEDULE (channel+)>
+<!ELEMENT channel (banner,day+)>
+<!ELEMENT banner (#PCDATA)>
+<!ELEMENT day (date,(holiday|programslot+)+)>
+<!ELEMENT date (#PCDATA)> 
+<!ELEMENT holiday (#PCDATA)> 
+<!ELEMENT programslot (time,title,description?)> 
+<!ELEMENT time (#PCDATA)> 
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT description (#PCDATA)> 
+				
+<!ATTLIST TVSCHEDULE name CDATA #REQUIRED>
+<!ATTLIST channel chan CDATA #REQUIRED>
+<!ATTLIST programslot vtr CDATA #IMPLIED>
+<!ATTLIST title rating CDATA #IMPLIED>
+<!ATTLIST title language CDATA #IMPLIED>
+	
+]>
+
+<TVSCHEDULE name="VTV3">
+	<channel chan="canal sur">
+		<banner> esto es un prueba </banner>
+		<day>
+			<date>02/5/2020</date>
+			<holiday>dia del trabajo</holiday>
+		</day>
+	</channel>
+
+	<channel chan="canal andalucia">
+		<banner> canal de prueba</banner>
+		<day>
+			<date>02/5/2020</date>
+			<programslot vtr="en directo">
+				<time>12:00</time>
+				<title>gol a gol</title>
+			</programslot>
+		</day>
+	</channel>
+
+	<channel chan="tv1">
+		<banner> otro canal de prueba</banner>
+		<day>
+			<date>02/5/2020</date>
+			<programslot vtr="en directo">
+				<time>12:00</time>
+				<title>las mañanas de la 1</title>
+				<description> noticias y salud</description>
+			</programslot>
+		</day>
+	</channel>
+
+	<channel chan="antena3">
+		<banner> canal de televisión</banner>
+		<day>
+			<date>02/5/2020</date>
+			<programslot vtr="en directo">
+				<time>15:00</time>
+				<title>antena 3 noticias</title>
+				<description> horario de noticias</description>
+			</programslot>
+		</day>
+	</channel>
+	
+</TVSCHEDULE>

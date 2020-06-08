@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio Número</title>
+    </head>
+	<body>
+		<script>
+		var numero, numero1, num, pares=0;
+		
+		numero= prompt("Introduce un número:");
+		numero1= prompt("Introduce otro número:");
+		num=numero;
+		do{
+			
+			if(num%2==0){
+			pares++;
+			}
+		
+			num++;
+		
+		}while(num<=numero1);
+		
+		alert("El numero de pares es: "+pares);
+		</script>
+		</body>
+	</html>

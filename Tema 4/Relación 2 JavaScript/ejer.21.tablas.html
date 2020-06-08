@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ejercicio 21: Tabla Multiplicar de un número</title>
+    </head>
+    <body>
+        <script>
+        var nr;
+        nr=prompt('Ingrese un número','');
+        nr=parseInt(nr);
+         
+        document.write("<table border='1'>");
+         
+        i=0;
+         
+        while (i <=10)
+        {
+        	tabel=nr*i;
+            document.write(i)
+        	document.write("<tr><td>");
+        	document.write(nr+" x "+ i+ " = "+ tabel + "<br>");
+        	document.write("</td></tr>");
+        }
+         
+        document.write("</table>");
+         
+        </script>
+        <p>Relación 2 de Ejercicios: Tabla de Multiplicar</p>
+    </body>
+</html>

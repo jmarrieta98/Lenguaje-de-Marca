@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE escuela[
+    <!ELEMENT escuela (curso+)>
+    <!ELEMENT curso (nombre_c,duracion,descripcion,beca,aula,precio,semanas,profesores,temas)>
+    <!ATTLIST curso id ID #REQUIRED>
+    <!ELEMENT nombre_c (#PCDATA)>
+    <!ELEMENT duracion (#PCDATA)>  
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT beca (becas| nobecas)> 
+    <!ELEMENT becas EMPTY>
+    <!ELEMENT nobecas EMPTY>
+    <!ATTLIST aula informatica (si|no) #IMPLIED>
+    <!ELEMENT aula (planta,num_aula)>
+    <!ELEMENT planta (#PCDATA)>
+    <!ELEMENT num_aula (#PCDATA)>
+    <!ELEMENT precio (pvp_ant_alum,pvp_nue_alum)>
+    <!ELEMENT pvp_ant_alum (#PCDATA)>
+    <!ELEMENT pvp_nue_alum (#PCDATA)>
+    <!ELEMENT semanas (semana,semana,semana+)>
+    <!ELEMENT semana (inicio,fin)+>
+    <!ATTLIST semanas horario (manyana|tarde) #IMPLIED>
+    <!ELEMENT inicio (dia,mes,annyo)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT annyo (#PCDATA)>
+    <!ELEMENT fin (dia,mes,annyo)>
+    <!ELEMENT profesores (profesor,profesor+)>
+    <!ATTLIST profesor tipo (teoria|practica) #IMPLIED> 
+    <!ELEMENT profesor (nombre,apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT temas (tema+)>
+    <!ATTLIST tema numero ID #REQUIRED>
+    <!ELEMENT tema (titulo,resumen,palabras,ejercicios)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT resumen (#PCDATA)>
+    <!ELEMENT palabras (#PCDATA)>
+    <!ELEMENT ejercicios (practicos,teoricos)>
+    <!ATTLIST practicos num_ej_p CDATA #IMPLIED dura_p  CDATA #IMPLIED>
+    <!ATTLIST teoricos num_p_teo CDATA #IMPLIED dura_t CDATA #IMPLIED>
+    <!ELEMENT practicos EMPTY>
+    <!ELEMENT teoricos EMPTY>    
+    
+]>
+<escuela>
+    <curso id="LLMM">
+        <nombre_c>Lenguaje de Marcas</nombre_c>
+        <duracion>6 meses</duracion>
+        <descripcion> Este curso trabaja los distintos leguajes de marcas...</descripcion>
+        <beca> 
+            <becas/>
+        </beca>
+        <aula informatica="si">
+            <planta>1</planta>
+            <num_aula>3</num_aula>
+        </aula>
+        <precio>
+            <pvp_ant_alum>100</pvp_ant_alum>
+            <pvp_nue_alum>200</pvp_nue_alum>
+        </precio>
+        <semanas horario="manyana">
+            <semana>
+            <inicio>
+                <dia> 19</dia>
+                <mes>9</mes>
+                <annyo>2019</annyo>
+            </inicio>
+            <fin>
+                <dia> 19</dia>
+                <mes>6</mes>
+                <annyo>2020</annyo>
+            </fin>
+            </semana>
+            <semana>
+            <inicio>
+                <dia> 1</dia>
+                <mes>6</mes>
+                <annyo>2018</annyo>
+            </inicio>
+            <fin>
+                <dia> 17</dia>
+                <mes>6</mes>
+                <annyo>2020</annyo>
+            </fin>
+            </semana>  
+              <semana>
+            <inicio>
+                <dia> 7</dia>
+                <mes>6</mes>
+                <annyo>2010</annyo>
+            </inicio>
+            <fin>
+                <dia> 13</dia>
+                <mes>6</mes>
+                <annyo>2011</annyo>
+            </fin>
+            </semana>            
+        </semanas>
+        <profesores>
+            <profesor tipo="teoria">
+                <nombre>Isabel</nombre>
+                <apellidos>Glez</apellidos>
+            </profesor>
+            <profesor tipo="teoria">
+                <nombre>Pepe</nombre>
+                <apellidos>Gotera</apellidos>
+            </profesor>
+        </profesores>
+        <temas>
+            <tema numero="Num5">
+                <titulo>HTML</titulo>
+                <resumen>HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto</resumen>
+                <palabras>HYTML, CSS</palabras>
+                <ejercicios>
+                    <practicos num_ej_p="N6" dura_p="N7"/>
+                    <teoricos num_p_teo="N5" dura_t="N88"></teoricos>
+                </ejercicios>
+            </tema>
+        </temas>
+    </curso>    
+</escuela>

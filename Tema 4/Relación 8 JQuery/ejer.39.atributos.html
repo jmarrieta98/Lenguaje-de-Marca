@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atributos</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+             width: 100%;
+             margin: 0 auto; 
+            } 
+        </style>
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+               $('#uno').click(function(){ 
+                   $('a[title="ejemplo"]').css({"border":"1px solid yellow"});
+                }); 
+               $('#dos').click(function(){ 
+               $('a[title=".com"]').css({"border":"1px solid yellow"});
+               });
+               $('#tres').click(function(){ 
+               $('a[title=".es"]').css({"border":"1px solid yellow"});
+               });
+               
+            });
+        </script>
+        <h1>Ejercicio 39: Atributos</h1>
+        <br><br>
+        <h1 id='uno'>Seleccionar enlaces con Ejemplo</h1>
+        <br><br>
+        <h1 id='dos'>Seleccionar enlaces con .com</h1>
+        <br><br>
+        <h1 id='tres'>Seleccionar enlaces con .es</h1>
+        <br><br>
+        <a href="" title="ejemplo">Enlace 1</a><br>
+        <a href="" title=".com">Enlace 2: .com</a><br>
+        <a href="" title=".es" >Enlace 3: .es</a><br>
+        
+    </body>
+</html>
+
+
+

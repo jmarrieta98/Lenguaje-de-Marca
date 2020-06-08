@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 13: Número Primo</title>
+    <h4>Determinar si un valor es primo</h4>
+	<script>
+    function esPrimo(num) {
+        if (num<=1 || num%1) {
+            return false;
+        }
+        let m=Math.sqrt(num);
+        for (let i=2; i<=m; i++) {
+            if (num%i==0) {
+                return false;
+            }
+        }
+        return true;
+    }
+ 
+	function primo()
+	{
+		let valor=parseInt(document.getElementById("valor").value);
+		if (esPrimo(valor)) {
+			document.getElementById("resultado").innerHTML="El número "+valor+" es Primo";
+		} else {
+			document.getElementById("resultado").innerHTML="El número "+valor+" NO es Primo";
+        }
+	}
+	</script>
+</head>
+<body>
+ 
+<input type="text" id="valor" value="" placeholder="introduce un valor numérico">
+<input type="button" onclick="primo()" value="Comprobar">
+ 
+<div id="resultado"></div>
+<h2>Ejercicios 3 Relación: Primos o No Primos </h2>
+</body>
+</html>

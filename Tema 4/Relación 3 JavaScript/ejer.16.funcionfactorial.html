@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Ejercicio 16: Factorial</title>
+		</head>
+		
+		<body>
+            <script type="text/javascript">
+            var n = parseInt(prompt("Introduzca un número: "));
+            var result = factorial(n);
+            alert("Resultado: " + result);
+			debugger
+            function factorial (n) {
+        	var total = 1; 
+        	for (i=1; i<=n; i++) {
+        		total = total * i; 
+        	}
+        	return total; 
+        }
+            </script>
+            <h2>Relación 3 JavaScript de Ejercicios: Función Factorial</h2>
+		</body>
+	</html>

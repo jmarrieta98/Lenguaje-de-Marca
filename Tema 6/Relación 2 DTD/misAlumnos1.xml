@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aula [
+    <!ELEMENT aula (alumno+)>
+    <!ELEMENT alumno (nombre, apellidos, sexo, fecha-nacimiento, direccion, telefono, nota-media-ciclo)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    
+    <!ELEMENT sexo (hombre | mujer)>
+    <!ELEMENT hombre EMPTY>
+    <!ELEMENT mujer EMPTY>
+
+    <!ELEMENT fecha-nacimiento (dia, mes, año)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT nota-media-ciclo (#PCDATA)>
+
+    <!ATTLIST alumno dni ID #REQUIRED>
+    <!ATTLIST telefono tipo (movil|fijo) "fijo">
+   
+]>
+<aula>
+    <alumno dni="id_001">
+         <nombre>Martin</nombre>
+         <apellidos>Perez Martinez </apellidos>
+         <sexo><hombre/></sexo>
+         <fecha-nacimiento>
+            <dia>12</dia>
+            <mes>marzo </mes>
+            <año> 1994</año>
+        </fecha-nacimiento>
+        <direccion> Dirección: Calle Caronte Nº 34</direccion>
+        <telefono tipo="movil fijo"> Telefono Fijo: 942222222</telefono>
+        <nota-media-ciclo> Nota: 8.7</nota-media-ciclo>
+    </alumno>
+    <alumno dni="id_002">
+        <nombre> Sandro </nombre>
+        <apellidos> Urrutia Vazquez </apellidos>
+        <sexo><hombre/></sexo>
+        <fecha-nacimiento>
+           <dia> 23</dia>
+           <mes> Junio</mes>
+           <año>1991 </año>
+       </fecha-nacimiento>
+       <direccion>Dirección: Calle Ibañez Nº 12</direccion>
+       <telefono tipo="movil fijo">Telefono Fijo: 956666666 </telefono>
+       <nota-media-ciclo> Nota: 9</nota-media-ciclo>
+   </alumno>
+   <alumno dni="id_003">
+         <nombre> Ana</nombre>
+         <apellidos> Velazquez Benitez</apellidos>
+         <sexo><mujer/></sexo>
+         <fecha-nacimiento>
+            <dia> 6 </dia>
+            <mes> enero </mes>
+            <año> 1999 </año>
+        </fecha-nacimiento>
+        <direccion>Dirección: Calle Cánovas Nº 4</direccion>
+        <telefono tipo="movil fijo">Telefono Fijo: 934444444 </telefono>
+        <nota-media-ciclo> Nota: 9</nota-media-ciclo>
+    </alumno>
+    <alumno dni="id_004">
+        <nombre> Alejandro</nombre>
+        <apellidos> Jimenez Santoña</apellidos>
+        <sexo><hombre/></sexo>
+        <fecha-nacimiento>
+           <dia> 30 </dia>
+           <mes> marzo</mes>
+           <año> 1994 </año>
+       </fecha-nacimiento>
+       <direccion>Dirección: Calle Filipinas Nº 21</direccion>
+       <telefono tipo="movil fijo"> Telefono Fijo: 927777777</telefono>
+       <nota-media-ciclo>Nota: 8</nota-media-ciclo>
+   </alumno>
+   <alumno dni="id_005">
+         <nombre> María</nombre>
+         <apellidos> Sanchez Acosta </apellidos>
+         <sexo><mujer/></sexo>
+         <fecha-nacimiento>
+            <dia> 10 </dia>
+            <mes> agosto </mes>
+            <año> 1999 </año>
+        </fecha-nacimiento>
+        <direccion>Dirección: Calle Valle Nº 25</direccion>
+        <telefono tipo="movil fijo"> Telefono Fijo: 921111111 </telefono>
+        <nota-media-ciclo>Nota: 8</nota-media-ciclo>
+    </alumno>
+    <alumno dni="id_006">
+         <nombre> Francisco</nombre>
+         <apellidos> Trujillo Dante</apellidos>
+        <sexo><hombre/></sexo>
+         <fecha-nacimiento>
+            <dia> 26</dia>
+            <mes> septiembre</mes>
+            <año> 1995</año>
+        </fecha-nacimiento>
+        <direccion>Dirección: Calle Celestino Nº 10</direccion>
+        <telefono tipo="movil fijo"> Telefono Fijo: 928888888 </telefono>
+        <nota-media-ciclo>Nota: 7</nota-media-ciclo>
+    </alumno>
+</aula>

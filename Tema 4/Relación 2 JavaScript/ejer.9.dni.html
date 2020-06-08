@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ejercicio 9 : DNI</title>
+		<script>
+			var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+			var numero = prompt("Escribe tu numero de DNI (sin la letra)");
+			var letra = prompt("Escribe la letra de tu DNI en mayusculas").toUpperCase();
+			debugger   // aqui meto el debugger para ver en consola el paso a paso
+			if (numero < 0 || numero > 99999999) {
+				alert("El número introducido no es válido");
+			}
+			else {
+				var letraCalculada = letras[numero % 23];
+				if (letraCalculada != letra) {
+					alert ("La letra introducida no es válida");
+				}
+				else {
+					alert ("El número y letra introducidos son correctos");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Relación 2 de Ejercicios: DNI</h2>
+	</body>
+</html>

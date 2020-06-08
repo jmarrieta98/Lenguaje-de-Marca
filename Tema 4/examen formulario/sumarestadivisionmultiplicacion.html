@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+	function Suma()
+	{
+		var num1 = parseInt(prompt('Introduzca un número:'));
+		var num2 = parseInt(prompt('Introduzca otro número:'));
+		var resultado=num1 + num2;
+		document.getElementById('resultado').value = (num1+"  +  " + num2 + " = " + resultado);
+		
+	}
+	
+	function Resta()
+	{
+		var num1 = parseInt(prompt('Introduzca un número:'));
+		var num2 = parseInt(prompt('Introduzca otro número:'));
+		var resultado=num1 - num2;
+		document.getElementById('resultado').value = (num1+"  -  " + num2 + " = " + resultado);
+	}
+	
+	function Division()
+	{
+		var num1 = parseInt(prompt('Introduzca un número:'));
+		var num2 = parseInt(prompt('Introduzca otro número:'));
+		var resultado=num1 / num2;
+		document.getElementById('resultado').value = (num1+"  /  " + num2 + " = " + resultado);
+	}
+	
+	function Multiplicacion()
+	{
+	    var num1 = parseInt(prompt('Introduzca un número:'));
+		var num2 = parseInt(prompt('Introduzca otro número:'));
+		var resultado= num1 * num2;
+		document.getElementById('resultado').value = (num1+"  *  " + num2 + " = " + resultado);
+	}	
+    function borrar() {
+		document.getElementById('resultado').value = "";
+    }
+	function mostrar_datos(){
+        var resultado = document.getElementById('num1').value;
+        var ventana = window.open("", "ventana", "width=200,height=100");
+        ventana.document.write("<p>Resultado </p>");
+        ventana.document.write("<p>"+ resultado + "</p>");
+        ventana.document.title = 'Resultados';
+		ventana.document.url = 'Resultados.es';
+    } 
+	function Exponente(){
+        var patron = /^\d*$/;
+        var num1 = document.getElementById('valor1').value;
+        var num2 = document.getElementById('valor2').value;
+        if (patron.test(num1)&&patron.test(num2)) {
+        document.getElementById('resultado').value = parseInt(num1) ** parseInt(num2);
+        }
+        else{
+            alert('El número introducido no es valido.')
+        }
+    }
+</script>
+<title>Funciones de resta, división, suma y multiplicación</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+	<form onsubmit="return false">   
+	    <p>Resultado:     
+	    <input name="resultado" type="text" id="resultado" size="30" min="0" align="right"/>
+        </p>
+	      <input type="button" name="btn_suma" id="btn_suma" value="Suma" size="30" min="0" onClick="Suma()" />
+	      <input type="button" name="btn_resta" id="btn_resta" value="Resta" size="30" min="0" onClick="Resta()"/>
+	      <input type="button" name="btn_divi" id="btn_divi" value="Division" size="30" min="0" onClick="Division()" />
+          <input type="button" name="btn_multi" id="btn_multi" value="Multiplicacion" size="30" min="0" onClick="Multiplicacion()"/>
+		  <input type="button" name="btn_borrar" id="btn_borrarr" value="Borrar" size="30" min="0" onclick="borrar()" />
+		  <input type="button" name="btn_exponente" id="btn_exponente" value="exponente" size="30" min="0" onclick="Exponente()" />
+		  <input name="button" type="button" onclick="window.close();" value="Cerrar esta ventana" /> 
+		  <button onclick="mostrar_datos()">Mostrar datos en otra ventana</button>
+		</p>
+	</form>
+</body>
+</html>

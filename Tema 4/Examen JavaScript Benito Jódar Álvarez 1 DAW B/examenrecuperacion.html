@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2: Formulario</title>
+        <meta charset="utf-8">
+        
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+            <title>Validación de un formulario con JavaScript</title>
+               
+            
+                
+    <body>
+        <h1>Ejemplo de formulario para<br> validación con Javascript</h1>
+        <form class="form">
+            <div class="content-input">
+                <div class="input">
+                    <input name="nombre" type="text" required id="nombre" title="Ingrese su nombre" placeholder="Su nombre">
+                </div>
+            </div>
+            <div class="content-input">
+                <div class="input">
+                    <input name="telefono" type="tel" pattern="[0-9]*" required id="telefono" placeholder="Su telefono de contacto">
+                </div>
+            </div>
+            <div class="content-input">
+                <div class="input">
+                    <input name="email" type="email" required id="email" title="Ingrese su email" placeholder="Su email">
+                </div>
+            </div>
+            <div class="content-input">
+                <div class="input">
+                    <textarea name="mensaje" required rows="5" id="mensaje" title="Comentarios" placeholder="Comentarios"></textarea>
+                </div>
+            </div>
+            <div class="content-input">
+                <div class="input">
+                    <button class="bottom">Enviar</button>
+                </div>
+            </div>
+        </form>
+       
+   
+       </body>
+   
+   </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 10: Array en Números Primos</title>
+    </head>
+    <body>
+        <script>
+            function primo(numero, num, array) {
+              let nume = 2;
+              debugger
+              while (nume <= Math.sqrt(numero)) {
+                if (numero % nume++ < 1) {
+                  return false;
+                }
+              }
+              return numero > 1;
+            }
+            
+            console.log([4, 8, 10].find(primo)); // no encontrado, undefined
+            console.log([2, 10, 21].find(primo)); // 2 
+        </script>
+    <h2>Relación 4 JavaScript de Ejercicios: Array en Números Primos</h2>
+    <h2>Ejercicio por consola</h2>
+    </body>
+</html>

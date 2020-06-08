@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mediosDeTransporte>
+  <bicicleta velocidad="v&lt;100km/h" />
+  <patinete velocidad-maxima="50 km/h" />
+</mediosDeTransporte>
+
+<!--Hay que corregir el carácter (<) pondremos &lt; -->
+<!--corregiremos los espaciosque presentan los atributos cambiando el nombre del atributo-->
+<!--las etiquetas deben terminar asi: (>) de la siguiente manera: /> lo corregimos-->

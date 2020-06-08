@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <div id="calculos" class='hide'></div>
+    <title> Ejercicio 20: Notas</title>
+</head>
+<body>
+    <script language="javascript">
+      function notas(){
+        var notas;
+        var x=1;
+        var y=0;
+        var notasMas5=0;
+        var notasMenos5=0;
+        
+        while (x<=10)
+        {
+        notas=prompt('Escriba las notas de los alumnos: ');
+        notas=parseInt(notas);
+        y=y+notas;
+        x=x+1;
+        if (notas>=5)
+        {
+        notasMas5++;
+        }
+        else
+        {
+        notasMenos5++;
+        
+        }
+        }
+        document.write('Aprobaron '+notasMas5);
+        document.write('<br>');
+        document.write('Suspendieron '+notasMenos5);
+        document.write('<br>');
+      }
+      notas();
+    </script>    
+    <h2>Ejercicios 3 Relación: Notas</h2> 
+</body>
+</html>
+ 
+

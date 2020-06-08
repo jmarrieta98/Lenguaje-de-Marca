@@ -1,0 +1,68 @@
+*{margin:0; padding: 0;} /*Elimina todos los espacios que vienen por defecto*/
+html{background-color: burlywood;}
+body{
+    width: 750px;
+    height: 750px;
+    margin: auto;
+    background-color: cornflowerblue;
+}
+header{
+    width: 750px;
+    height: 250px;
+    background-color: darkgoldenrod;
+}
+nav{
+    width: 750px;
+    height: 100px;
+    background-color: darkgray;
+}
+main{
+    width: 750px;
+    height: 400px;
+    background-color: darkred;
+}
+footer{
+    width: 750px;
+    height: 50px;
+    background-color: darkseagreen;
+}
+section#banner{
+    width: 500px;
+    height: 250px;
+    float: left;
+    background-color: darkslategrey;
+}
+section#logo{
+    width: 250px;
+    height: 125px;
+    float: left;
+    background-color: rebeccapurple;
+}
+section#login{
+    width: 250px;
+    height: 125px;
+    float: left;
+    background-color: rgb(87,167,31);
+}
+aside#left{
+    width: 150px;
+    height: 400px;
+    float: left;
+    background-color: rosybrown;
+}
+aside#right{
+    width: 100px;
+    height: 400px;
+    float: left;
+    background-color: rgb(23,148,170);
+}
+article{
+    width: 500px;
+    height: 400px;
+    float: left;
+    background-color: skyblue;
+}
+li{
+    display: inline;
+    margin: 5px;
+}

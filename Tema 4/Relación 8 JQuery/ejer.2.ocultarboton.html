@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ocultar Botón</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        window.onload = function() {
+            /**
+             * Esta función oculta el contenido
+             */
+            function todoOculto() {
+                $('input[name="ocultar"]').hide();
+            }
+    
+            $('input[name="ocultar"]').on('click', todoOculto);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Ejercicio 2: Ocultar encabezado y párrafos</h1>
+    <p>Este primer parráfo es de prueba para el ejercicio</p>
+    <p>Este segundo parráfo es de prueba para el ejercicio</p>
+    <input type="button" name="ocultar" value="Ocultar" />
+</body>
+</html>

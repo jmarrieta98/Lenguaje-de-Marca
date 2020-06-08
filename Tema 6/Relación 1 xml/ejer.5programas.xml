@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<programas>
+  <programa nombre="Firefox" licencia="GPL MPL" />
+  <programa nombre="LibreOffice" licencia="LGPL" />
+  <programa nombre="Inkscape" licencia="GPL" />
+</programas>
+
+
+<!--no se podrán repetir los atributos, por lo tanto hay que corregir mediante la union de los atributos en uno solo, o bien se duplican -->
+<!--hay que colocar las comillas los atributos.-->

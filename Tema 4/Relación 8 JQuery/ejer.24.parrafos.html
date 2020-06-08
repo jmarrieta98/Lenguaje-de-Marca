@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Capa empty</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("p").remove(".italic");
+                });
+            });
+        </script>
+        <h1>Ejercicio 24: Borrar con class=”italic”</h1>
+        
+        <div>
+            <p class="italic">Párrafo con atributo class "italic"</p>
+            <p>Otro párrafo</p>
+        </div>
+        <button>Borrar el parrafo con class "italic"</button>
+
+          
+    </body>
+</html>

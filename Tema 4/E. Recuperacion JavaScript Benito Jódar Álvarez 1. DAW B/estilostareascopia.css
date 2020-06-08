@@ -1,0 +1,16 @@
+body{
+	background-color:#FFC;
+}
+
+
+fieldset{
+	padding:10px 10px 10px 50px;
+	background-color:#F93;	
+	box-shadow: 10px 10px 5px 0px #999999;
+	border-radius: 10px;
+	
+}
+h1{
+	font-family: Arial, Helvetica, sans-serif; font-size: 2em;
+	text-align: center;
+}

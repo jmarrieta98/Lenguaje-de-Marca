@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color de Fondo</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#boton").click(function(){
+                    alert("El color del texto es " + $("#parrafo").css("background-color"));
+                });
+            });
+
+        </script>
+        <h1>Ejercicios 27: Color de Fondo</h1>
+        
+        <p id="parrafo" style="background-color: red;">Esto es un párrafo de texto de color rojo.</p>
+        <p><input type="button" id="boton" value="Clicka para obtener la propiedad"></p> 
+    </body>
+</html>

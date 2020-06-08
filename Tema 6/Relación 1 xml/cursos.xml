@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curso id="">
+     <nombre-curso> </nombre-curso>
+     <duracion> </duracion>
+     <descripcion> </descripcion>
+     <becas>
+        <beca-si> </beca-si>
+        <nobecas> </nobecas>
+    </becas>
+    <aula informatica="si o no"> 
+        <numero-planta> </numero-planta>
+        <numero-aula> </numero-aula>
+    </aula>
+    <precio>
+        <precio-antiguos-alumnos> </precio-antiguos-alumnos>
+        <precio-nuevos-alumnos> </precio-nuevos-alumnos>
+    </precio>
+    <semanas>
+        <semana horario="mañana o tarde">
+            <inicio>
+                <dia> </dia>
+                <mes> </mes>
+                <año> </año>
+            </inicio>
+            <fin>
+                <dia> </dia>
+                <mes> </mes>
+                <año> </año>
+            </fin>
+            <fechas> </fechas>
+        </semana>
+    </semanas>
+    <profesores>
+            <profesor tipo="teoría o prácticas">
+                <nombre></nombre>
+                <apellidos></apellidos>
+                <datos-profesores></datos-profesores>
+            </profesor>
+    </profesores>
+    <temas>
+        <tema numero="">
+            <titulo></titulo>
+            <resumen-del-tema></resumen-del-tema>
+            <palabras-clave></palabras-clave>
+            <ejercicios>
+                <practicos>
+                    <numero-ejercicios></numero-ejercicios>
+                    <duracion></duracion>
+                </practicos>
+                <teoricos>
+                    <numero-ejercicios></numero-ejercicios>
+                    <duracion></duracion>
+                </teoricos>
+            </ejercicios>
+            <numero-tema></numero-tema>
+        </tema>
+    </temas>
+</curso>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ciudades Resaltadas</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+             $(document).ready(function(){
+                $("#boton").on("click",function(){
+            	    $("#lista").css("background-color", "#FF0040");
+                });
+            });
+        </script>
+        <h1>Ejercicios 32: Ciudad Resaltada</h1>
+        
+        <ul>
+            <li>Barcelona</li>
+            <li id="lista">Cádiz</li>
+            <li>Santander</li>
+            <li>Granada</li>
+            <li>Sevilla</li>
+        </ul>
+
+        <p><input type="button" id="boton" value="Clicka para cambiar la propiedad"></p>
+    </body>
+</html>

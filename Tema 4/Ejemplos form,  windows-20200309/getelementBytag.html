@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Lista ordenada:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<p>Elegimos el segundo elemento de li (index 1).</p>
+
+<button onclick="myFunction()">Segundo elto</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("LI");
+  document.getElementById("demo").innerHTML = x[1].innerHTML;
+}
+</script>
+
+</body>
+</html>

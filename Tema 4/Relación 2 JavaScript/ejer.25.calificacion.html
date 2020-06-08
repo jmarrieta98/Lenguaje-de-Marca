@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 25: Calificación</title>
+    </head>
+    <body>
+        <script>
+            var num = true;
+            while (num){
+                var nota = parseInt(prompt("Introduzca una nota numérica: "));
+                if (nota <= 0 || nota >= 10){
+                } else {
+                    if (nota < 5){
+                        document.writeln("Usted está suspenso");
+                    }else if (nota > 5 && nota < 7){
+                        document.writeln("Usted está aprobado");
+                    }else if (nota >= 7 && nota < 9){
+                        document.writeln("Usted ha sacado notable");
+                    }else if (nota >= 9 && nota <= 10){
+                        document.writeln("Usted ha sacado sobresaliente");
+                    }
+                    num = false
+                }
+            }
+        </script>
+        <h2>Relación 2 de Ejercicios: Calificación Numérica</h2>
+    </body>
+</html>

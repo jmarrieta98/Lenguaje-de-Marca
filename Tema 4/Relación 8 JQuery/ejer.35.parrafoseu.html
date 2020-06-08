@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EU</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+             width: 100%;
+             margin: 0 auto; 
+            } 
+        </style>
+    </head>
+    <body>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#uno').click(function(){ 
+                    $('p[title="eu"]').css({"border":"1px solid red"});
+                }); 
+            }); 
+        </script>
+        <h1>Ejercicio 35: Párrafo con "eu"</h1>
+        <br><br>
+        <h1 id='uno'>Seleccionar el párrafo que contien eu</h1>
+        <br><br>
+        <p title="eu">Estoy en una prueba para eu de LLMM</p>
+        
+        
+    </body>
+</html>
+
+
+

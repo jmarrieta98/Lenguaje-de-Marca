@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+  <deportista>
+    <deporte nombre="Atletismo" />
+    <nombre>Jesse Owens</nombre>
+  </deportista>
+  <deportista>
+    <deporte nombre="Natación" />
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+</deportistas>
+
+
+<!--Las etiquetas deporte tienen que corregirse: -->
+<!--mediante valores de un atributo o ponerlo con texto dentro de la etiqueta-->
+<!--la etiqueta deportista no está cerrada por lo tanto la cerraremos-->

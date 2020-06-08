@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Hotel</title>
+        <meta charset="utf-8"/>
+        <style>
+            table,th,td {border: 1px solid black;
+            }
+            table{width: 30%; border-collapse: separate;
+            }
+            input:focus{
+                color: seagreen;
+            }
+            select:focus{
+                color:seagreen
+            }
+        </style>
+    </head>
+<body style="background-color: brown;">
+    <form action="mailto:reservas@mihotel.com">
+    
+      <table align="center" style="background-color: sandybrown;">
+            <td colspan="2;">
+                <h1><p style="text-align: center; ">Mi Hotel</p></h1>
+            </td>
+            <tr>
+                <td>
+                    <p>Nombre</p>
+                </td>
+                <td>
+                    <input type="text" name="Nombre" required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Apellidos</p>
+                </td>
+                <td>
+                    <input type="text" name="Apellidos" required>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <p>Teléfono</p>
+                </td>
+                <td>
+                    <input type="tel" name="Teléfono " required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Email</p>
+                </td>
+                <td>
+                     <input type="email" name="Email" required=> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Numero Noches</p>
+                </td>
+                <td>
+                    <input type="numero" name="Nombre" required=>  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Fecha Entrada:</p>
+                </td>
+  
+                <td>
+                    <p>Elige un día</p>
+                    <select name="día">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18<8/option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option> 
+                        <option value="29">29</option> 
+                        <option value="30">30</option> 
+                        <option value="31">31</option>
+                        </var>                        
+                    </select>
+                    <p>Elige un mes</p>
+                    <select name="mes">
+                        <option value="Enero">Enero</option> 
+                        <option value="Febrero">Febrero</option> 
+                        <option value="Marzo">Marzo</option> 
+                        <option value="Abril">Abril</option> 
+                        <option value="Mayo">Mayo</option> 
+                        <option value="Junio">Junio</option> 
+                        <option value="Julio">Julio</option> 
+                        <option value="Agosto">Agosto</option> 
+                        <option value="Septiembre">Septiembre</option> 
+                        <option value="Octubre">Octubre</option> 
+                        <option value="Noviembre">Noviembre</option> 
+                        <option value="Diciembre">Diciembre</option> 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Tipo Habitación</p>
+                    <input type="radio" name="tipo hab" value="habitación simple" checked />Habitación Simple<br/>
+                    <input type="radio" name="tipo hab" value="habitación doble"/>Habitación Doble<br/>
+                    <input type="radio" name="tipo hab" value="habitación Matrimonio"/>Habitación Matrimonio<br/>
+                </td>
+                <td>
+                    <p>Complementos </p>
+                    <input type="checkbox" name="comp[]" />Desayuno<br/>
+                    <input type="checkbox" name="comp[]" />Comida<br/>
+                    <input type="checkbox" name="comp[]" />Cena<br/>
+                    <input type="checkbox" name="comp[]" />Cama Supletoria<br/>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="comentarios "></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         <input type="submit" value="Enviar"/>
+                    </td>
+                    <td>
+                        <input type="reset" value="Resetear"/>
+                    </td>
+                </tr>
+      </table> 
+    </form>
+</body>
+</html>
+
+   
